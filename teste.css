@@ -1,0 +1,82 @@
+*{
+    font-family: arial;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.topo{
+    height: 50px;
+    background-color: #347aba;
+}
+
+.topointerior{
+    width: 1000px;
+    margin: auto;
+    color: #FFFFFF;
+}
+
+.logomarca{
+    float: left;
+    font-size: 24px;
+    line-height: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+    list-style: none;
+}
+
+.menu{
+    float: right;
+}
+
+.menu li:hover{
+    background-color: red;
+}
+
+.logomarca:hover{
+    background-color: red;
+}
+
+.menu a{
+    color: white;
+}
+
+.menu ul,
+.menu li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu li{
+    float: right;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 50px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.conteudointerno{
+    width: 1000px;
+    margin: auto;
+    height: 8px;
+}
+
+.titulo_opcoes{
+    height: 90px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 90px;
+}
+
+.rodape{
+    background-color: #347aba;
+    height: 100px;
+    line-height: 50px;
+    color: #FFFFFF;
+    margin-top: 569px;
+}

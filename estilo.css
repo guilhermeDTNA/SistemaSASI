@@ -1,0 +1,396 @@
+/*.corpo{
+    background:#897;
+    width: 50px;
+    height: 50px;
+}*/
+.conteudointerno{
+    text-align: center;
+    min-height:100%;
+    width: 1000px;
+    margin: auto;
+    
+}
+
+
+.principal{
+    text-align: center;
+    min-height:100%;
+    position:relative;
+    margin-top: 40px;
+}
+
+.principal ul{
+    list-style:none;
+}
+
+.principal ul li { 
+    display: inline; 
+}
+
+.principal ul li a {
+    background-color:#EDEDED;
+    color: #333;
+    text-decoration: none;
+    padding: 2px 10px;
+}
+
+.principal ul li a:hover {
+    background-color:#D6D6D6;
+    border-bottom:5px solid #EA0000;
+}
+
+.principal p{
+    background-color:#D6D6D6;
+    width: 1000px;
+    margin: auto;
+    min-height:100%;
+}
+
+.formulario{
+    background:#6D6D6D;
+    width: 400px;
+    height: 450px;
+    margin:0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+*{
+    font-family: arial;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: #DCDCDC;
+}
+
+.titulo_opcoes{
+    height: 90px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 90px;
+}
+
+.rodape{
+  margin: auto;
+  width: 100%;
+  bottom: 0;
+  height: 70px;
+  position: fixed;
+  background: url(menu-bg.png) repeat;
+  position: fixed;
+  background-position: center bottom;
+}
+
+#rodapeas {
+
+  position:relative;
+    
+  font-size: 12px;
+  color: #fff;
+  text-align: center;
+  
+  background:url("img/rodape.png") ;
+  
+  
+  
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  
+  }
+
+.geral {
+  position:relative;
+  width:1000px;
+  margin: auto; 
+  padding: 20px;
+}
+
+.geral h1{
+  text-align: center;
+  margin: 130px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 100px;
+}
+
+.geral h3{
+  text-align: center;
+  margin: 130px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 70px;
+}
+
+.content {
+  overflow:hidden;}
+
+
+.icone img{
+  width: 10%;
+  margin: 40px;
+  padding: 10px;
+  border-radius: 50%;
+  float: right;
+}
+.controdape h4{
+  color: #fff;
+  margin: 13px;
+}
+
+.fundador{
+    width: 300px;
+    margin: 10px;
+    padding: 0.1px;
+    height: 180px;
+}
+
+.icone{
+    width: 300px;
+    height: 180px;
+    float: right;
+    margin: 10px;
+    padding: 0.1px;
+}
+
+
+.copy{
+  background-image: url('menu-bg.png');
+  width: 100%;
+  height: 70px;
+  margin-top: 500px;
+}
+
+.copy p{
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+}
+
+
+INPUT.MeuInput {
+    width: 180px;
+    height: 30px;
+}
+
+.login{
+  margin-top: 20px;
+  width: 400px;
+  height: 400px;
+  margin: auto;
+  padding: 40px;
+}
+.loginp p{
+  background: #EA0000;
+  width: 400px;
+  margin: auto;
+  height: 30px;
+  padding: 15px;
+  text-align: center;
+  margin-top: 100px;
+}
+.login form{
+      border: 3px solid #f1f1f1;
+}
+.container input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button{
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+.logout{
+  background-color: #fff;
+  color: white;
+  padding: 5px;
+  cursor: pointer;
+  width: 70px;
+  text-align: center;
+  border-radius: 10%;
+  float: right;
+  transition-duration: 1.5s;
+  margin: 15px;
+}
+
+.logout a {
+  padding: 8px 6px;
+  display: block;
+  color: #393939;
+  font-size: 13px;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-left: 4px solid transparent;
+  transition: all 0.35s ease-in-out;
+  text-shadow: 0 1px 0 white;
+}
+
+button:hover {
+    opacity:0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar{
+    width: 10%;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.senha{
+    float: right;
+    padding-top: 16px; 
+}
+
+@media screen and (max-width: 300px) {
+  span.senha {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:600');
+/* Menu CSS */#cssmenu,
+#cssmenu > ul {
+  background: url(highlight-bg.png) repeat;
+  padding-bottom: 3px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+
+}
+#cssmenu:before,
+#cssmenu:after,
+#cssmenu > ul:before,
+#cssmenu > ul:after {
+  content: "";
+  display: table;
+}
+#cssmenu:after,
+#cssmenu > ul:after {
+  clear: both;
+}
+#cssmenu {
+  width: auto;
+  zoom: 1;
+}
+#cssmenu > ul {
+  background: url(menu-bg.png) repeat;
+  margin: 0;
+  padding: 0;
+  position: relative;
+
+}
+#cssmenu > ul li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+#cssmenu > ul > li {
+  float: left;
+  position: relative;
+}
+#cssmenu > ul > li > a {
+  padding: 23px 26px;
+  display: block;
+  color: white;
+  font-size: 13px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-shadow: 0 -1px 0 #9e3825;
+  text-shadow: 0 -1px 0 rgba(116, 37, 2, 0.7);
+  line-height: 18px;
+}
+#cssmenu > ul > li:hover > a {
+  background: url(hover.png) repeat;
+  text-shadow: 0 -1px 0 #97321f;
+  text-shadow: 0 -1px 0 rgba(122, 42, 26, 0.64);
+}
+#cssmenu > ul > li > a > span {
+  line-height: 18px;
+}
+#cssmenu > ul > li.active > a,
+#cssmenu > ul > li > a:active {
+}
+/* Childs */
+#cssmenu > ul ul {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 120px;
+  background: url(highlight-bg.png) repeat;
+  margin: 0;
+  padding: 0;
+  z-index: -1;
+}
+#cssmenu > ul li:hover ul {
+  opacity: 1;
+  visibility: visible;
+  margin: 0;
+  color: #000;
+  z-index: 2;
+  top: 64px;
+  left: 0;
+}
+#cssmenu > ul ul:before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  width: 100%;
+  height: 20px;
+  background: transparent;
+}
+#cssmenu > ul ul li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+#cssmenu > ul ul li a {
+  padding: 18px 26px;
+  display: block;
+  color: #393939;
+  font-size: 13px;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 150px;
+  border-left: 4px solid transparent;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  -ms-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+  text-shadow: 0 1px 0 white;
+}
+#cssmenu > ul ul li a:hover {
+  border-left: 4px solid #de553b;
+  background: url(hover.png) repeat;
+  color: white;
+  text-shadow: 0 1px 0 black;
+}
+#cssmenu > ul ul li a:active {
+  background: url(menu-bg.png) repeat;
+}
