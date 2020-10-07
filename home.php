@@ -42,7 +42,7 @@ session_start();
 			        <input name="senha" type="password" placeholder="Sua senha" required><br>
 			        
 			        <button type="submit">Login</button>
-			        <a href="https://www.guilhermerocha.tk"><button type="button" class="btn-danger">Retornar ao portfolio</button></a>
+			        
 		        </div>
 		    </form>
 	    </div>
