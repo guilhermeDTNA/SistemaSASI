@@ -55,7 +55,6 @@
               </ul>
            </li>  
            <li class='active'><a href="gerenciar.php?tipo=despesa"><span>Gestão de despesas</span></a></li>    
-           <li class='active'><a href="https://www.guilhermerocha.tk"><span>Retornar ao portfolio</span></a></li> 
            <div class="logout">
               <a href="logout.php">Sair</a>
            </div> 
