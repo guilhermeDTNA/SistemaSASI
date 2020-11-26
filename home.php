@@ -6,7 +6,7 @@ session_start();
     
 <head>
     <meta charset="UTF-8">
-    <title>Login - TeamStudy</title>
+    <title>Login - GereCurso</title>
     <link rel="stylesheet" type="text/css" href="estilo.css">
     
     <!-- Arquivos Bootstrap -->
