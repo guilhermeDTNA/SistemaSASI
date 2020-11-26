@@ -45,7 +45,7 @@
         </script>
     </style>
     <link rel="stylesheet" type="text/css" href="estilo.css">
-    <title>Página Inicial - GereCurso</title>
+    <title>Página Inicial - TeamStudy</title>
 </head>
 <body>
     <?php
@@ -58,7 +58,7 @@
 
     <div class="geral">
         <div class="content">
-            <h3><font color="blue">Bem-Vindo ao GereCurso!</font></h3>
+            <h3><font color="blue">Bem-Vindo ao TeamStudy!</font></h3>
         </div>
     </div>
 
