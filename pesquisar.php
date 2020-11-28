@@ -1,3 +1,10 @@
+<html>
+<head>
+    <link rel="stylesheet" href="bootstrap-4.5.3-dist/css/bootstrap.min.css">
+    <script type="text/javascript" src="bootstrap-4.5.3-dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+
 <?php
 session_start();
 include_once './valida_login.php';
@@ -37,8 +44,14 @@ try {
 // open the table
         print "<h2><p align=center> <font color=red> Registros encontrados: </font></p></h2> ";
 
-        print "<table align=center border=2px height = 100 wdith= 200 cellspacing=5 cellpadding= 5>\n";
-        print "<tr>\n";
+        if ($cargo=='matricula' || $cargo=='despesa' || $cargo=='curso'){
+            print "<table class='table table-dark table-hover table-bordered '> \n";
+        }
+        else{
+            print "<table class='table table-dark table-hover table-bordered table-responsive'> \n";
+        }
+
+        print "<tr align=center>\n";
 // add the table headers
         foreach ($arrValues[0] as $key => $useless) {
             print "<th>$key</th>";
@@ -48,7 +61,7 @@ try {
         foreach ($arrValues as $row) {
             print "<tr>";
             foreach ($row as $key => $val) {
-                print "<td>$val</td>";
+                print "<td align=center>$val</td>";
             }
             ?>
 
@@ -65,3 +78,5 @@ try {
 
 include_once './rodape.php';
 ?>
+</body>
+</html>

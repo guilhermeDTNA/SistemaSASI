@@ -295,7 +295,7 @@ span.senha{
   clear: both;
 }
 #cssmenu {
-  width: auto;
+  width: 100%;
   zoom: 1;
 }
 #cssmenu > ul {

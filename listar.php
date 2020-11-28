@@ -6,9 +6,9 @@
         
         <!-- Arquivos Bootstrap -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-4.5.3-dist/css/bootstrap.min.css">
     <script type="text/javascript" src="jquery.min.js" ></script>
-    <script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="bootstrap-4.5.3-dist/js/bootstrap.min.js"></script>
     </head>
 
     <body>
@@ -50,8 +50,17 @@
                 $msg1 = ucfirst($msg);
                 // open the table
                 print "<h2><p align=center> <font color=red> $msg1   </font></p></h2> ";
-                print "<table align=center border=2px height = 100 wdith= 200 cellspacing=5 cellpadding= 5>\n";
-                print "<tr>\n";
+                print "<p align=center>";
+
+                /*Esse if existe porque se nas tabelas com menos colunas não se deve usar o table-responsive, fica estranho*/
+                if ($msg1=='Matricula' || $msg1=='Despesa' || $msg1=='Curso' || $msg1=='Curso-Aluno' || $msg1=='Professor-Aluno' || $msg1=='Lucro'){
+                    print "<table class='table table-dark table-hover table-bordered '> \n";
+                }
+                else{
+                    print "<table class='table table-dark table-hover table-bordered table-responsive'> \n";
+                }
+                
+                print "<tr align=center>\n";
                 // add the table headers
                 foreach ($arrValues[0] as $key => $useless) {
                     print "<th>$key</th>";
@@ -61,12 +70,13 @@
                 foreach ($arrValues as $row) {
                     print "<tr>";
                     foreach ($row as $key => $val) {
-                        print "<td>$val</td>";
+                        print "<td align=center>$val</td>";
                     }
                     print "</tr>\n";
                 }
                 // close the table
                 print "</table>\n";
+                print "</p>";
             }
         } catch (PDOException $e) {
             die("ERROR: Could not able to execute $sql. " . $e->getMessage());
