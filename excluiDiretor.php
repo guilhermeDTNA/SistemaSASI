@@ -2,7 +2,7 @@
 session_start();
 include_once './valida_login.php';
 /* Attempt MySQL server connection. Assuming you are running MySQL
-  server with default setting (user 'root' with no password) */
+server with default setting (user 'root' with no password) */
 include_once './mysql.php';
 
 include_once './topo.php';
@@ -10,27 +10,34 @@ include_once './topo.php';
 
 // Attempt insert query execution
 try {
-    
+
     if ($_POST['nivel']=="superuserroot"){
         echo "<script type=text/javascript>alert('Você não tem permissão para realizar essa operação!');window.location='removeDiretor.php'</script>";
         exit();
     }
     else{
-    
+
     // Create prepared statement
-    $id = addslashes($_POST['id_diretor']);
+        $id = addslashes($_POST['id_diretor']);
 
-    $sql = "DELETE FROM diretor WHERE id_diretor = $id";
+        $sql = "DELETE FROM diretor WHERE id_diretor = $id";
 
-    $stmt = $pdo->prepare($sql);
+        $stmt = $pdo->prepare($sql);
 
-    $stmt->execute();
-    
-    echo "<script type=text/javascript>alert('Operação realizada com sucesso!');window.location='removeDiretor.php'</script>";
+        $stmt->execute();
+
+        echo "<script type=text/javascript>alert('Operação realizada com sucesso!');window.location='removeDiretor.php'</script>";
     }
 } catch (PDOException $e) {
     //die("ERROR: Could not able to execute $sql. " . $e->getMessage());
-    echo "<script type=text/javascript>alert('Operação NÃO realizada!');window.location='removeDiretor.php'</script>";
+    //echo $e;
+
+    if (strpos( $e, 'despesa')) {
+        echo "<script type=text/javascript>alert('Operação NÃO realizada: há ao menos uma despesa associada a esse diretor');window.location='removeDiretor.php' </script>";
+    }
+    else{
+        echo "<script type=text/javascript>alert('Operação NÃO realizada');window.location='removeDiretor.php'</script>";
+    }
 }
 
 

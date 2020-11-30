@@ -24,23 +24,28 @@
             <font color="black">Cadastra Cursos
         </div>
                     <form action="cadastraCurso.php" method="POST">
-                        <div>
+                        <table bgcolor="darksalmon" align=center border=2px height = 100 wdith= 200 cellspacing=5 cellpadding= 5> 
+                        <tr>
+                            <td>
+                        
                             ID do Professor Responsável: <input type="number" placeholder="Professor Responsável" name="id_professor">
-                        </div><br>
+                        </td><br>
 
-                        <div>
+                        <td>
                             Nome Curso: <input type="text" placeholder="Nome Curso" name="nome_curso">
-                        </div><br>
-
-			<div>
+                        </td>
+                    </tr>
+                    <tr>
+			             <td>
                             Valor da Mensalidade: <input type="number" placeholder="Mensalidade:" name="mensalidade">
-                        </div><br>
+                        </td><br>
 
-                        <div>
+                        <td>
                             Quantidade Inicial de alunos: <input type="number" placeholder="Quantidade de alunos:" name="qtd_alunos">
-                        </div><br>
-
-                        <input type="submit" value="Registrar Curso">
+                        </td><br>
+                    </tr>
+                </table><br><br>
+                        <center><input type="submit" value="Registrar Curso"></center>
                         </div>
                     </form>
             <?php

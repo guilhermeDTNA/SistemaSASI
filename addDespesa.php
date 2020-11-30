@@ -14,6 +14,10 @@
 
     <body>
         <?php
+        session_start();
+        include_once './valida_login.php';
+        ?>
+        <?php
         include_once './topo.php';
         ?>
         <div class="titulo_opcoes">
@@ -23,7 +27,7 @@
                         <table bgcolor="darksalmon" align=center border=2px height = 100 wdith= 200 cellspacing=5 cellpadding= 5> 
                         <tr>
                             <td>
-                            ID do DIretor: <input type="number" placeholder="ID do Diretor" name="id_diretor">
+                            ID do Diretor: <input type="number" placeholder="ID do Diretor" name="id_diretor">
                         </td><br>
                         
                         <td>
