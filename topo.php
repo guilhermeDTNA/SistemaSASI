@@ -32,12 +32,12 @@
    <li class='active'><a href="index.php"><span>Home</span></a></li>
    <li class='has-sub'><a href='#'><span>Listagens</span></a>
     <ul>
-      <li><a href="listar.php?msg=aluno" target="_blank">LISTAR ALUNOS</a></li>
-      <li><a href="listar.php?msg=professor" target="_blank">LISTAR PROFESSORES</a></li>
-      <li><a href="listar.php?msg=curso" target="_blank">LISTAR CURSOS</a></li>
-      <li><a href="listar.php?msg=despesa" target="_blank">LISTAR DESPESAS</a></li>
-      <li><a href="listar.php?msg=matricula" target="_blank">LISTAR MATRÍCULAS</a></li>
-      <li><a href="listar.php?msg=diretor" target="_blank">LISTAR DIRETORES</a></li>
+      <li><a href="listar.php?msg=aluno" >LISTAR ALUNOS</a></li>
+      <li><a href="listar.php?msg=professor" >LISTAR PROFESSORES</a></li>
+      <li><a href="listar.php?msg=curso" >LISTAR CURSOS</a></li>
+      <li><a href="listar.php?msg=despesa" >LISTAR DESPESAS</a></li>
+      <li><a href="listar.php?msg=matricula" >LISTAR MATRÍCULAS</a></li>
+      <li><a href="listar.php?msg=diretor" >LISTAR DIRETORES</a></li>
     </ul>
   </li>
   <li class='has-sub'><a href='#'><span>Gestão de pessoas</span></a>
@@ -53,7 +53,8 @@
       <li><a href="gerenciar.php?tipo=matricula">Gerenciar matricula</a></li>
     </ul>
   </li>  
-  <li class='active'><a href="gerenciar.php?tipo=despesa"><span>Gestão de despesas</span></a></li>    
+  <li class='active'><a href="gerenciar.php?tipo=despesa"><span>Gestão de despesas</span></a></li>
+  <li class='active'><a href="./politica/politica.pdf" target="_blank"><span>Download da Política de Segurança</span></a></li>
   <div class="logout">
     <a href="logout.php">Sair</a>
   </div> 
