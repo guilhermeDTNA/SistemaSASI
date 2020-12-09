@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="bootstrap-4.5.3-dist/css/bootstrap.min.css">
     <script type="text/javascript" src="jquery.min.js" ></script>
     <script type="text/javascript" src="bootstrap-4.5.3-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="redireciona_https.js"></script>
     </head>
 
     <body>

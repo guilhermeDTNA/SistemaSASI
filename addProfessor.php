@@ -1,27 +1,28 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Cadastrar Professor - GereCurso</title>
-        <link rel="stylesheet" type="text/css" href="estilo.css">
-        
-        <!-- Arquivos Bootstrap -->
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastrar Professor - GereCurso</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    
+    <!-- Arquivos Bootstrap -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
     <script type="text/javascript" src="jquery.min.js" ></script>
     <script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
-    </head>
+    <script type="text/javascript" src="redireciona_https.js"></script>
+</head>
 
-    <body>
-        <?php
-        session_start();
-        include_once './valida_login.php';
-        ?>
-        <?php
-        include_once './topo.php';
-        ?>
-        <div class="titulo_opcoes">
-            <font color="black">Cadastra professores
+<body>
+    <?php
+    session_start();
+    include_once './valida_login.php';
+    ?>
+    <?php
+    include_once './topo.php';
+    ?>
+    <div class="titulo_opcoes">
+        <font color="black">Cadastra professores
         </div>
 
         <form action="cadastraProfessor.php" method="POST">
@@ -103,5 +104,5 @@
             include_once './rodape.php';
             ?>
 
-    </body>
-</html>
+        </body>
+        </html>
