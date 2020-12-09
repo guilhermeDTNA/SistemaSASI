@@ -8,13 +8,9 @@
     <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
     <script type="text/javascript" src="jquery.min.js" ></script>
     <script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
-   <!-- <script type="text/javascript" src="redireciona_http.js"></script> -->
+   <script type="text/javascript" src="redireciona_http.js"></script>
 
-    <script>
-        if(location.protocol !== 'https:') {
-            location.href = "https://localhost/SistemaSASI/";
-        }
-    </script>
+
     
     <style>
         * {
