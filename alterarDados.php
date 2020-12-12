@@ -31,8 +31,9 @@
 
         <form action="update.php" method="POST"> 
             <p align="center"> Identificação (ID): <input type="text" name="id_a" required="">
-                <input type="submit" value="Procurar" name="procurar"></p>
                 <input type="hidden" name="tipo" value="<?php echo $_GET['tipo'] ?>">
+                <input type="submit" value="Procurar" name="procurar"></p>
+                
         </form>
 
         <?php if(isset($_POST['procurar'])){

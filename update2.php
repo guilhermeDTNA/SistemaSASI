@@ -94,7 +94,7 @@ $rua = addslashes($_POST['rua_diretor']);
 $numero = addslashes($_POST['numero']);
 $cidade = addslashes($_POST['cidade_diretor']);
 $estado = addslashes($_POST['estado_diretor']);
-$senha = addslashes($_POST['senha']);
+//$senha = addslashes($_POST['senha']);
 $usuario = addslashes($_POST['usuario']);
 }
 
@@ -113,7 +113,7 @@ $estado = addslashes($_POST['estado']);
 try {
 
 // Create prepared statement
-    echo $id_registro;
+    
 if((addslashes($_POST['oTipo']) == 'aluno')){
 $msql = "UPDATE aluno SET nome_aluno = '$nome', sobrenome_aluno = '$sobrenome', email_aluno = '$email', data_nasc = '$data_nasc', rua_aluno = '$rua', numero = '$numero', cidade_aluno = '$cidade', estado_aluno = '$estado' WHERE id_aluno = '$id_registro'";
 
@@ -143,19 +143,25 @@ $stmt->bindParam($numero, addslashes($_REQUEST['numero']));
 $stmt->bindParam($cidade, addslashes($_REQUEST['cidade_professor']));
 $stmt->bindParam($estado, addslashes($_REQUEST['estado_professor']));
 }else{
-$msql = "UPDATE diretor SET nome_diretor = '$nome', sobrenome_diretor = '$sobrenome', email_diretor = '$email', data_nasc = '$data_nasc', rua_diretor = '$rua', numero = '$numero', cidade_diretor = '$cidade', estado_diretor = '$estado', senha = '$senha', usuario = '$usuario' WHERE id_diretor = '$id_registro'";
+
+    $prefixo = "ABCDE";
+    $senha_final = $prefixo.''.$_POST['senha'];
+
+    $hash = md5($senha_final);
+
+$msql = "UPDATE diretor SET nome_diretor = '$nome', sobrenome_diretor = '$sobrenome', email_diretor = '$email', data_nasc = '$data_nasc', rua_diretor = '$rua', numero = '$numero', cidade_diretor = '$cidade', estado_diretor = '$estado', senha = '$hash', usuario = '$usuario' WHERE id_diretor = '$id_registro'";
 
 $stmt = $pdo->prepare($msql);
 
 $stmt->bindParam($nome, addslashes($_REQUEST['nome_diretor']));
 $stmt->bindParam($sobrenome, addslashes($_REQUEST['sobrenome_diretor']));
 $stmt->bindParam($email, addslashes($_REQUEST['email_diretor']));
-// $stmt->bindParam($data_nasc, addslashes($_REQUEST['data_nasc']));
+$stmt->bindParam(':data_nasc', addslashes($_REQUEST['data_nasc']));
 $stmt->bindParam($rua, addslashes($_REQUEST['rua_diretor']));
 $stmt->bindParam($numero, addslashes($_REQUEST['numero']));
 $stmt->bindParam($cidade, addslashes($_REQUEST['cidade_diretor']));
 $stmt->bindParam($estado, addslashes($_REQUEST['estado_diretor']));
-$stmt->bindParam($senha, addslashes($_REQUEST['senha']));
+$stmt->bindParam(':senha', addslashes($hash));
 $stmt->bindParam($usuario, addslashes($_REQUEST['usuario']));
 }
 
