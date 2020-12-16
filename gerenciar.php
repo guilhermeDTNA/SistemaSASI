@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Gerenciar - GereCurso</title>
+        <title>Gerenciar - TeamStudy</title>
         <link rel="stylesheet" type="text/css" href="estilo.css">
         
         <!-- Arquivos Bootstrap -->

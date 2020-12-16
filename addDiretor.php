@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Cadastrar Diretor - GereCurso</title>
+        <title>Cadastrar Diretor - TeamStudy</title>
         <link rel="stylesheet" type="text/css" href="estilo.css">
         
         <!-- Arquivos Bootstrap -->

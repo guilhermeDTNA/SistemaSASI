@@ -4,7 +4,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Alterar Dados - GereCurso</title>
+        <title>Alterar Dados - TeamStudy</title>
         <link rel="stylesheet" type="text/css" href="estilo.css">
         
         <!-- Arquivos Bootstrap -->

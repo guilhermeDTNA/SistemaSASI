@@ -1,7 +1,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Listar - GereCurso</title>
+        <title>Listar - TeamStudy</title>
         <link rel="stylesheet" type="text/css" href="estilo.css">
         
         <!-- Arquivos Bootstrap -->

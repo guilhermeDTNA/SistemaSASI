@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Cadastrar Aluno - GereCurso</title>
+    <title>Cadastrar Aluno - TeamStudy</title>
     <link rel="stylesheet" type="text/css" href="estilo.css">
 
     <!-- Arquivos Bootstrap -->

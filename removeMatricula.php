@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Remover Matrícula - GereCurso</title>
+        <title>Remover Matrícula - TeamStudy</title>
         <link rel="stylesheet" type="text/css" href="estilo.css">
         <script type="text/javascript" src="redireciona_https.js"></script>
     </head>
