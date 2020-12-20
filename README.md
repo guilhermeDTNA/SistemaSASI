@@ -27,6 +27,8 @@ Passos colocar o sistema funcionando localmente:
 * Altere as conexões com a base de dados nos arquivos do sistema. Acesse os arquivos:
     * login.php e mysql.php (Nos arquivos de conexão, você deve informar os dados para conectar a base de dados que você criou)
 
+* Para adicionar o HTTPS nas páginas, consulte o tutorial disponível na pasta arquivos
+
 * Acesse o endereço *localhost/SistemaSASI*
     * Para fazer login no sistema localmente, existe um usuário teste:
         * Login: admin

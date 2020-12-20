@@ -54,7 +54,7 @@
     </ul>
   </li>  
   <li class='active'><a href="gerenciar.php?tipo=despesa"><span>Gestão de despesas</span></a></li>
-  <li class='active'><a href="./politica/politica.pdf" target="_blank"><span>Download da Política de Segurança</span></a></li>
+  <li class='active'><a href="./arquivos/politica.pdf" target="_blank"><span>Download da Política de Segurança</span></a></li>
   <div class="logout">
     <a href="logout.php">Sair</a>
   </div> 
