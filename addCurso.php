@@ -29,23 +29,22 @@
                         <tr>
                             <td>
                         
-                            ID do Professor Responsável: <input type="number" placeholder="Professor Responsável" name="id_professor">
+                            ID do Professor Responsável: <input type="number" placeholder="Professor Responsável" name="id_professor" required="true">
                         </td><br>
 
                         <td>
-                            Nome Curso: <input type="text" placeholder="Nome Curso" name="nome_curso">
+                            Nome Curso: <input type="text" placeholder="Nome Curso" name="nome_curso" required="true">
                         </td>
                     </tr>
                     <tr>
-			             <td>
-                            Valor da Mensalidade: <input type="number" placeholder="Mensalidade:" name="mensalidade">
-                        </td><br>
+			             <td colspan="2" align="center">
+                            Valor da Mensalidade: <input type="number" placeholder="Mensalidade:" name="mensalidade" required="true">
+                        </td>
 
-                        <td>
-                            Quantidade Inicial de alunos: <input type="number" placeholder="Quantidade de alunos:" name="qtd_alunos">
-                        </td><br>
+                        
                     </tr>
-                </table><br><br>
+                </table>
+                <br><br>
                         <center><input type="submit" value="Registrar Curso"></center>
                         </div>
                     </form>

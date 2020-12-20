@@ -21,7 +21,8 @@
         <form action="excluiMatricula.php" method="POST">
 
             <p align="center"> Identificação (ID) da Matricula: <input type="text" name="id_matricula"> <br>
-            <p align="center"> Identificação (ID) do Curso: <input type="text" name="id_curso"> <br><br>
+            <p align="center"> Identificação (ID) do Curso: <input type="text" name="id_curso">
+            <br><br>
 
                 <input type="submit" value="Remover Matricula"></p>
         </form>

@@ -13,6 +13,22 @@ try {
     // Create prepared statement
     $id = addslashes($_POST['id_professor']);
 
+    $sql = "SELECT * FROM professor WHERE id_professor = $id";
+
+	$stmt = $pdo->prepare($sql);
+
+	$stmt->execute();
+
+	$arrValues = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+
+	if (empty($arrValues)) {
+		?>    
+		echo "<script type=text/javascript>alert('Professor não encontrado!');window.location='removeProfessor.php'</script>";
+
+		<?php
+	} else {
+
     $sql = "DELETE FROM professor WHERE id_professor = $id";
 
     $stmt = $pdo->prepare($sql);
@@ -21,6 +37,7 @@ try {
 
     
     echo "<script type=text/javascript>alert('Operação realizada com sucesso!');window.location='removeProfessor.php'</script>";
+}
 } catch (PDOException $e) {
     //die("ERROR: Could not able to execute $sql. " . $e->getMessage());
         echo "<script type=text/javascript>alert('Operação NÃO realizada!');window.location='removeProfessor.php'</script>";

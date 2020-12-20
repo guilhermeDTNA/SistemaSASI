@@ -28,15 +28,15 @@
                         <table bgcolor="darksalmon" align=center border=2px height = 100 wdith= 200 cellspacing=5 cellpadding= 5> 
                         <tr>
                             <td>
-                            ID do Diretor: <input type="number" placeholder="ID do Diretor" name="id_diretor">
+                            ID do Diretor: <input type="number" placeholder="ID do Diretor" name="id_diretor" required="true">
                         </td><br>
                         
                         <td>
-                            Nome da Despesa: <input type="text" placeholder="Nome da Despesa" name="nome_despesa">
+                            Nome da Despesa: <input type="text" placeholder="Nome da Despesa" name="nome_despesa" required="true">
                         </td><br>
                         
                         <td>
-                            Valor da Despesa: <input type="text" placeholder="Valor da Despesa" name="valor_despesa">
+                            Valor da Despesa: <input type="text" placeholder="Valor da Despesa" name="valor_despesa" required="true">
                         </td><br>
 
                         

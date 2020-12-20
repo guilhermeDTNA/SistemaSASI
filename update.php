@@ -60,21 +60,18 @@ if ($tipo == 'curso') {
 
             <tr>
                 <td>
-                    ID professor: <input type="number" name="id_professor" value="<?php echo $return['id_professor'] ?>">
+                    ID professor: <input type="number" name="id_professor" value="<?php echo $return['id_professor'] ?>" required>
                 </td>
                 <td>
-                    Nome curso: <input type="text"  name="nome" value="<?php echo $return['nome_' . $tipo] ?>">
+                    Nome curso: <input type="text"  name="nome" value="<?php echo $return['nome_' . $tipo] ?>" required>
                 </td>
             <input type="hidden" name="id_registro" value="<?php echo $id ?>">
 
             </tr>
 
-            <tr>
-                <td>
-                    Quantidade de alunos: <input type="number" name="num_alunos" value="<?php echo $return['qtd_alunos'] ?>">
-                </td>
-                <td>
-                    Valor da Mensalidade: <input type="number" name="mensalidade"  value="<?php echo $return['mensalidade'] ?>">
+            <tr align="center">
+                <td colspan="2">
+                    Valor da Mensalidade: <input type="number" name="mensalidade" value="<?php echo $return['mensalidade'] ?>" required>
                 </td>
             </tr>
 
@@ -89,14 +86,14 @@ if ($tipo == 'curso') {
 
             <tr>
                 <td>
-                    ID diretor: <input type="number" name="id_diretor" value="<?php echo $return['id_diretor'] ?>">
+                    ID diretor: <input type="number" name="id_diretor" value="<?php echo $return['id_diretor'] ?>" required>
                 </td>
                 <td>
-                    Nome da despesa: <input type="text"  name="nome" value="<?php echo $return['nome_' . $tipo] ?>">
+                    Nome da despesa: <input type="text"  name="nome" value="<?php echo $return['nome_' . $tipo] ?>" required>
                 </td>
 
                 <td>
-                    Valor da despesa: <input type="number" name="valor_despesa"  value="<?php echo $return['valor_despesa'] ?>">
+                    Valor da despesa: <input type="number" name="valor_despesa"  value="<?php echo $return['valor_despesa'] ?>" required>
                 </td>
             <input type="hidden" name="id_registro" value="<?php echo $id ?>">
             </tr>
@@ -109,10 +106,10 @@ if ($tipo == 'curso') {
 
             <tr>
                 <td>
-                    ID curso: <input type="number" name="id_curso" value="<?php echo $return['id_curso'] ?>">
+                    ID curso: <input type="number" name="id_curso" value="<?php echo $return['id_curso'] ?>" required>
                 </td>
                 <td>
-                    ID aluno: <input type="text"  name="id_aluno" value="<?php echo $return['id_aluno'] ?>">
+                    ID aluno: <input type="text"  name="id_aluno" value="<?php echo $return['id_aluno'] ?>" required>
                 </td>
             <input type="hidden" name="id_registro" value="<?php echo $id ?>">
             </tr>
@@ -128,32 +125,32 @@ if ($tipo == 'curso') {
 
                 <tr>
                     <td>
-                        Nome: <input type="text" placeholder="Nome" name="nome_diretor" value="<?php echo $return['nome_' . $tipo] ?>">
+                        Nome: <input type="text" placeholder="Nome" name="nome_diretor" value="<?php echo $return['nome_' . $tipo] ?>" required>
                     </td>
                     <td>
-                        Sobrenome: <input type="text" placeholder="Sobrenome" name="sobrenome_diretor" value="<?php echo $return['sobrenome_' . $tipo] ?>">>
+                        Sobrenome: <input type="text" placeholder="Sobrenome" name="sobrenome_diretor" value="<?php echo $return['sobrenome_' . $tipo] ?>" required>
                     </td>
                     <td>
-                        E-mail: <input type="email" placeholder="E-mail" name="email_diretor" value="<?php echo $return['email_' . $tipo] ?>">
+                        E-mail: <input type="email" placeholder="E-mail" name="email_diretor" value="<?php echo $return['email_' . $tipo] ?>" required>
                     </td>
                     <td>
-                        Data de nascimento: <input type="date" placeholder="Data" name="data_nasc" value="<?php echo $return['data_nasc'] ?>">
+                        Data de nascimento: <input type="date" placeholder="Data" name="data_nasc" value="<?php echo $return['data_nasc'] ?>" required>
                     </td>
                 </tr>
 
                 <tr>
                     <td>
-                        Rua: <input type="text" placeholder="Rua" name="rua_diretor" value="<?php echo $return['rua_' . $tipo] ?>">
+                        Rua: <input type="text" placeholder="Rua" name="rua_diretor" value="<?php echo $return['rua_' . $tipo] ?>" required>
                     </td>
                     <td>
-                        Número: <input type="number" placeholder="Numero" name="numero" value="<?php echo $return['numero'] ?>">
+                        Número: <input type="number" placeholder="Numero" name="numero" value="<?php echo $return['numero'] ?>" required>
                     </td>
                     <td>
-                        Cidade: <input type="text" placeholder="Cidade" name="cidade_diretor" value="<?php echo $return['cidade_' . $tipo] ?>">
+                        Cidade: <input type="text" placeholder="Cidade" name="cidade_diretor" value="<?php echo $return['cidade_' . $tipo] ?>" required>
                     </td>
         
                     <td>
-                        Estado: <select name="estado_diretor" placeholder="Estado">
+                        Estado: <select name="estado_diretor" placeholder="Estado" required>
                             <option selected disabled="disabled">Estado</option>
                             <option value="AC">Acre</option>
                             <option value="AL">Alagoas</option>
@@ -190,10 +187,10 @@ if ($tipo == 'curso') {
                     <td></td>
 
                     <td>
-                        Senha: <input type="password" placeholder="Senha" name="senha" value="<?php echo $return['senha'] ?>">
+                        Senha: <input type="password" placeholder="Senha" name="senha" value="<?php echo $return['senha'] ?>" required>
                     </td>
                     <td>
-                        Usuário: <input type="text" placeholder="Usuário" name="usuario" value="<?php echo $return['usuario'] ?>">
+                        Usuário: <input type="text" placeholder="Usuário" name="usuario" value="<?php echo $return['usuario'] ?>" required>
                     </td>
                     
                     <td></td>
@@ -214,41 +211,41 @@ if ($tipo == 'curso') {
 
             <tr>
                 <td>
-                    Nome: <input type="text"  name="nome" value="<?php echo $return['nome_' . $tipo] ?>">
+                    Nome: <input type="text"  name="nome" value="<?php echo $return['nome_' . $tipo] ?>" required>
                 </td>
                 <td>
-                    Sobrenome: <input type="text"  name="sobrenome" value="<?php echo $return['sobrenome_' . $tipo] ?>">
+                    Sobrenome: <input type="text"  name="sobrenome" value="<?php echo $return['sobrenome_' . $tipo] ?>"required>
                 </td>
                 <td>
-                    E-mail: <input type="email" name="email" value="<?php echo $return['email_' . $tipo] ?>">
-                </td>
-            </tr>
-
-            <tr>
-                <td>
-                    Data de nascimento: <input type="date" name="data_nasc" value="<?php echo $return['data_nasc'] ?>">
-                </td>
-                <td>
-                    Rua: <input type="text" name="rua" value="<?php echo $return['rua_' . $tipo] ?>">
-                </td>
-                <td>
-                    Número: <input type="number" name="numero" value="<?php echo $return['numero'] ?>">
+                    E-mail: <input type="email" name="email" value="<?php echo $return['email_' . $tipo] ?>" required>
                 </td>
             </tr>
 
             <tr>
                 <td>
-                    Cidade: <input type="text" name="cidade" value="<?php echo $return['cidade_' . $tipo] ?>">
+                    Data de nascimento: <input type="date" name="data_nasc" value="<?php echo $return['data_nasc'] ?>" required>
+                </td>
+                <td>
+                    Rua: <input type="text" name="rua" value="<?php echo $return['rua_' . $tipo] ?>" required>
+                </td>
+                <td>
+                    Número: <input type="number" name="numero" value="<?php echo $return['numero'] ?>" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    Cidade: <input type="text" name="cidade" value="<?php echo $return['cidade_' . $tipo] ?>" required>
                 </td>
     <?php if ($tipo == 'professor') {
         ?> 
                     "<td>
-                        Salário: <input type="text" name="salario" value="<?php echo $return['salario'] ?>">
+                        Salário: <input type="text" name="salario" value="<?php echo $return['salario'] ?>" required>
                     </td>";
 
     <?php } ?>
                 <td>
-                    Estado: <select name="estado" placeholder="Estado" required="">
+                    Estado: <select name="estado" placeholder="Estado" required="true">
                         <option></option>
                         <option  disabled="disabled">Estado</option>
                         <option value="AC">Acre</option>

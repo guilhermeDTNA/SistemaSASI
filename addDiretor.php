@@ -29,32 +29,32 @@
 
                 <tr>
                     <td>
-                        Nome: <input type="text" placeholder="Nome" name="nome_diretor">
+                        Nome: <input type="text" placeholder="Nome" name="nome_diretor" required="true">
                     </td>
                     <td>
-                        Sobrenome: <input type="text" placeholder="Sobrenome" name="sobrenome_diretor">
+                        Sobrenome: <input type="text" placeholder="Sobrenome" name="sobrenome_diretor" required="true">
                     </td>
                     <td>
-                        E-mail: <input type="email" placeholder="E-mail" name="email_diretor">
+                        E-mail: <input type="email" placeholder="E-mail" name="email_diretor" required="true">
                     </td>
                     <td>
-                        Data de nascimento: <input type="date" placeholder="Data" name="data_nasc">
+                        Data de nascimento: <input type="date" placeholder="Data" name="data_nasc" required="true" max="2004-01-01" min="1930-12-31">
                     </td>
                 </tr>
 
                 <tr>
                     <td>
-                        Rua: <input type="text" placeholder="Rua" name="rua_diretor">
+                        Rua: <input type="text" placeholder="Rua" name="rua_diretor" required="true">
                     </td>
                     <td>
-                        Número: <input type="number" placeholder="Numero" name="numero">
+                        Número: <input type="number" placeholder="Numero" name="numero" required="true">
                     </td>
                     <td>
-                        Cidade: <input type="text" placeholder="Cidade" name="cidade_diretor">
+                        Cidade: <input type="text" placeholder="Cidade" name="cidade_diretor" required="true">
                     </td>
         
                     <td>
-                        Estado: <select name="estado_diretor" placeholder="Estado">
+                        Estado: <select name="estado_diretor" placeholder="Estado" required>
                             <option selected disabled="disabled">Estado</option>
                             <option value="AC">Acre</option>
                             <option value="AL">Alagoas</option>
@@ -91,10 +91,10 @@
                     <td></td>
 
                     <td>
-                        Senha: <input type="password" placeholder="Senha" name="senha">
+                        Senha: <input type="password" placeholder="Senha" name="senha" required="true">
                     </td>
                     <td>
-                        Usuário: <input type="text" placeholder="Usuário" name="usuario">
+                        Usuário: <input type="text" placeholder="Usuário" name="usuario" required="true">
                     </td>
                     
                     <td></td>

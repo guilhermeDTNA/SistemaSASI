@@ -12,6 +12,10 @@
     <script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 
     <script type="text/javascript" src="redireciona_https.js"></script>
+    <script>
+        //var dateControl = document.querySelector('input[type="date"]');
+        //dateControl.value = '2017-06-01';
+    </script>
 
 </head>
 <!--Teste Trabalho Banco de DadosII-->
@@ -33,37 +37,37 @@
 
                 <tr>
                     <td>
-                        Nome: <input type="text" placeholder="Nome" name="nome_aluno">
+                        Nome: <input type="text" placeholder="Nome" name="nome_aluno" required="true">
                     </td>
                     <td>
-                        Sobrenome: <input type="text" placeholder="Sobrenome" name="sobrenome_aluno">
+                        Sobrenome: <input type="text" placeholder="Sobrenome" name="sobrenome_aluno" required="true">
                     </td>
                     <td>
-                        E-mail: <input type="email" placeholder="E-mail" name="email_aluno">
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>
-                        Data de nascimento: <input type="date" placeholder="Data" name="data_nasc">
-                    </td>
-                    <td>
-                        Rua: <input type="text" placeholder="Rua" name="rua_aluno">
-                    </td>
-                    <td>
-                        Número: <input type="number" placeholder="Numero" name="numero">
+                        E-mail: <input type="email" placeholder="E-mail" name="email_aluno" required="true">
                     </td>
                 </tr>
 
                 <tr>
                     <td>
-                        Cidade: <input type="text" placeholder="Cidade" name="cidade_aluno">
+                        Data de nascimento: <input type="date" placeholder="Data" name="data_nasc" required="true" max="2004-01-01" min="1930-12-31">
+                    </td>
+                    <td>
+                        Rua: <input type="text" placeholder="Rua" name="rua_aluno" required="true">
+                    </td>
+                    <td>
+                        Número: <input type="number" placeholder="Numero" name="numero" required="true">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Cidade: <input type="text" placeholder="Cidade" name="cidade_aluno" required="true">
                     </td>
                     <td>
 
                     </td>
                     <td>
-                        Estado: <select name="estado_aluno" placeholder="Estado">
+                        Estado: <select name="estado_aluno" placeholder="Estado" required="true">
                             <option selected disabled="disabled">Estado</option>
                             <option value="AC">Acre</option>
                             <option value="AL">Alagoas</option>

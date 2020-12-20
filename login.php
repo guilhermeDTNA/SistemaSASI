@@ -43,7 +43,7 @@ $row = mysqli_num_rows($result);
 if($row == 1) {
 	$_SESSION['usuario'] = $usuario;
 
-	echo"<script language='javascript' type='text/javascript'>alert('Bem-Vindo, $usuario');window.location.href='./index.php';</script>";
+	echo"<script language='javascript' type='text/javascript'>window.location.href='./index.php';</script>";
 	exit();
 } else {
 	$_SESSION['nao_autenticado'] = true;

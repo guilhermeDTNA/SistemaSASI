@@ -31,35 +31,35 @@
 
                 <tr>
                     <td>
-                        Nome: <input type="text" placeholder="Nome" name="nome_professor">
+                        Nome: <input type="text" placeholder="Nome" name="nome_professor" required="true">
                     </td>
                     <td>
-                        Sobrenome: <input type="text" placeholder="Sobrenome" name="sobrenome_professor">
+                        Sobrenome: <input type="text" placeholder="Sobrenome" name="sobrenome_professor" required="true">
                     </td>
                     <td>
-                        E-mail: <input type="email" placeholder="E-mail" name="email_professor">
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>
-                        Data de nascimento: <input type="date" placeholder="Data" name="data_nasc">
-                    </td>
-                    <td>
-                        Rua: <input type="text" placeholder="Rua" name="rua_professor">
-                    </td>
-                    <td>
-                        Número: <input type="number" placeholder="Numero" name="numero">
+                        E-mail: <input type="email" placeholder="E-mail" name="email_professor" required="true">
                     </td>
                 </tr>
 
                 <tr>
                     <td>
-                        Cidade: <input type="text" placeholder="Cidade" name="cidade_professor">
+                        Data de nascimento: <input type="date" placeholder="Data" name="data_nasc" max="2004-01-01" min="1930-12-31" required="true">
+                    </td>
+                    <td>
+                        Rua: <input type="text" placeholder="Rua" name="rua_professor" required="true">
+                    </td>
+                    <td>
+                        Número: <input type="number" placeholder="Numero" name="numero" required="true">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Cidade: <input type="text" placeholder="Cidade" name="cidade_professor" required="true">
                     </td>
                     
                     <td>
-                        Estado: <select name="estado_professor" placeholder="Estado">
+                        Estado: <select name="estado_professor" placeholder="Estado" required="true">
                             <option selected disabled="disabled">Estado</option>
                             <option value="AC">Acre</option>
                             <option value="AL">Alagoas</option>
@@ -92,7 +92,7 @@
                     </td>
                     
                     <td>
-                        Salário: <input type="text" placeholder="Salário" name="salario">
+                        Salário: <input type="text" placeholder="Salário" name="salario" required="true">
                     </td>
                 </tr>
 

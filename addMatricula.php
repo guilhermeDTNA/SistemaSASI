@@ -30,12 +30,12 @@
             <table bgcolor="darksalmon" align=center border=2px height = 100 wdith= 200 cellspacing=5 cellpadding= 5> 
             <tr>
                 <td>
-                ID do Aluno: <input type="number" placeholder="ID do Aluno" name="id_aluno">
+                ID do Aluno: <input type="number" placeholder="ID do Aluno" name="id_aluno" required="true">
             </td>
             <br>
 
             <td>
-                ID do Curso: <input type="number" placeholder="ID do Curso" name="id_curso">
+                ID do Curso: <input type="number" placeholder="ID do Curso" name="id_curso" required="true">
             </td>
             
             <br>

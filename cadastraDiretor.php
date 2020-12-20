@@ -1,7 +1,7 @@
 <?php
-   
+
 /* Attempt MySQL server connection. Assuming you are running MySQL
-  server with default setting (user 'root' with no password) */
+server with default setting (user 'root' with no password) */
 include_once './mysql.php';
 
 include_once './topo.php';
@@ -10,13 +10,19 @@ include_once './topo.php';
 // Attempt insert query execution
 try {
     // Create prepared statement
-    
+    if($_POST['senha']=='' || $_POST['usuario']==''){
+        echo "<script type=text/javascript>alert('Operação NÃO realizada! Usuário ou senha inválidos');window.location='addDiretor.php'</script>";
+    }
+
+    if($_POST['estado_diretor']==''){
+        echo "<script type=text/javascript>alert('Operação NÃO realizada! Estado inválido');window.location='addDiretor.php'</script>";
+    }
+
+
     $prefixo = "ABCDE";
     $senha_final = $prefixo.''.$_POST['senha'];
 
     $hash = md5($senha_final);
-
-    //echo $hash;
     
     $sql = "INSERT INTO diretor (nome_diretor,sobrenome_diretor,email_diretor, data_nasc, rua_diretor, numero, cidade_diretor, estado_diretor, senha, usuario) VALUES (:nome_diretor,:sobrenome_diretor,:email_diretor, :data_nasc, :rua_diretor, :numero, :cidade_diretor, :estado_diretor, :senha, :usuario)";
     $stmt = $pdo->prepare($sql);
